@@ -1,0 +1,248 @@
+/* Fonts Setup*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Charm:wght@400;700&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sedan+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+/* Color Setup */
+:root{
+    --primary: #3155e7;
+    --secondary: #2045d6;
+    --black: #010101;
+    --gray-1: #788190;
+    --gray-2: #d3d4db;
+    --white: #FFFFFFFF;
+    --body: #fefefe;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--body);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* button */
+.btn{
+    border-radius: 8px;
+
+}
+
+.btn-primary, 
+.btn-outline-secondary{
+    padding: 12px 20px;
+}
+
+.btn-primary{
+    background: var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-dark);
+}
+
+.btn-outline-secondary{
+    border: 1px solid -(--gray-2);
+    color: var(--black);
+}
+
+.btn-outline-secondary:hover{
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+
+.btn-outline-secondary:focus{
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+
+/* NavBar */
+.navbar > .btn-outline-secondary{
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.navbar{
+    padding: 12px 0;
+}
+
+.nav-link{
+    margin-left: 41px;
+    font-size: 10px;
+    color: var(--gray-1);
+}
+
+.navbar .nav-link.active{
+    font-weight: bold;
+    color: var(--black);
+
+}
+
+/* Hero */
+.hero{
+    padding: 80px 0;
+}
+
+.hero .text{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 71px;
+    color: var(--black);
+
+}
+
+.buttons{
+    padding-top: 69px;
+}
+
+.buttons .btn{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+/* setup setion */
+
+.setup {
+    padding: 287px 0;
+}
+
+.setup .text-header h3{
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.setup .text-header p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--gray-1);
+    padding: 27px  0;
+}
+
+.setup .icons{
+    padding: 27px  0;
+}
+
+.setup h5{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--black);
+    padding-bottom: 18px;
+}
+
+.setup .desc p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--gray-1);
+    max-width: 284px;
+    margin: 0 auto;
+}
+
+/* Information */
+section.info .text-info{
+    padding: 134px 0;
+}
+
+.info h5{
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.info p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--gray-1);
+    padding-top: 20px;
+}
+
+.info .info-1{
+    padding-top: 183px 0;
+}
+
+/* footer section */
+
+footer{
+    padding-top: 279px;
+    margin-bottom: 44px;
+}
+
+footer a{
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 14px;
+    color:  var(--black);
+}
+
+footer .copy{
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--gray-2);
+    line-height: 17px;
+    font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width:576px) {
+    .hero,
+    .setup,
+    .info
+    {
+        text-align: center;
+    }
+    
+    /* NavBar */
+    .navbar{
+        padding: 20px 0;
+    }
+
+    .nav-link{
+        margin-left: 0 !important;
+    }
+
+    /* Hero */
+    
+
+    .buttons .btn{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .buttons .ms-3{
+        margin-left: 0 !important;
+    }
+
+    .hero img{
+        padding-top: 2.5rem;
+    }
+
+    .hero .text{
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 53px;
+    }
+    
+    /* Setup */
+    section.setup{
+        padding: 50px 0;
+    }
+
+    /* Footer */
+    footer{
+        padding-top: 50px;
+        margin-bottom: 44px;
+    }
+}
+
+
